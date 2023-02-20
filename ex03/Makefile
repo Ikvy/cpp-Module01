@@ -1,11 +1,11 @@
-SRCS	= newZombie.cpp \
-		  randomChump.cpp \
-		  Zombie.class.cpp \
-		  main.cpp
+SRCS	= main.cpp \
+		  Weapon.class.cpp \
+		  HumanA.class.cpp \
+		  HumanB.class.cpp
 
 OBJS	=  ${SRCS:.cpp=.o}
 
-NAME	=  ex00
+NAME	= ex03
 CC		= c++
 RM		= rm -f
 CFLAGS	= -Wall -Wextra -Werror -std=c++98

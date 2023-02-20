@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.class.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/17 14:26:11 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/20 07:04:07 by mmidon           ###   ########.fr       */
+/*   Created: 2023/02/20 09:05:15 by mmidon            #+#    #+#             */
+/*   Updated: 2023/02/20 09:59:38 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.class.hpp"
+#ifndef HUMANB_CLASS_HPP
+#define HUMANB_CLASS_HPP
+#include "Weapon.class.hpp"
 
-int main()
+class HumanB
 {
-	Zombie *zombie;
-	zombie = newZombie("Bebou");
-	zombie->announce();
-
-	randomChump("Uobeb");
-	delete zombie;
-}
+	public:
+		HumanB(std::string name);
+		void setWeapon(Weapon &weapon);
+		void attack();
+	private:
+		std::string name;
+		Weapon *weapon;
+};
+#endif

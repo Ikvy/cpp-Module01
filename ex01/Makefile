@@ -4,7 +4,7 @@ SRCS	= Zombie.class.cpp \
 
 OBJS	=  ${SRCS:.cpp=.o}
 
-NAME	=  horde
+NAME	= ex01
 CC		= c++
 RM		= rm -f
 CFLAGS	= -Wall -Wextra -Werror -std=c++98

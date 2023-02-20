@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.class.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/17 14:26:11 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/20 07:04:07 by mmidon           ###   ########.fr       */
+/*   Created: 2023/02/20 07:56:12 by mmidon            #+#    #+#             */
+/*   Updated: 2023/02/20 09:21:10 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.class.hpp"
+#include "Weapon.class.hpp" 
 
-int main()
+Weapon::Weapon(std::string type)
 {
-	Zombie *zombie;
-	zombie = newZombie("Bebou");
-	zombie->announce();
+	Weapon::type = type;
+}
 
-	randomChump("Uobeb");
-	delete zombie;
+const std::string Weapon::getType()
+{
+	const std::string &ref = Weapon::type;
+
+	return (ref);
+}
+
+void Weapon::setType(std::string newType)
+{
+	Weapon::type = newType;
 }

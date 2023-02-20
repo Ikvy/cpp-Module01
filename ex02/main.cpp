@@ -5,19 +5,26 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/17 14:26:11 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/20 07:04:07 by mmidon           ###   ########.fr       */
+/*   Created: 2023/02/20 07:41:10 by mmidon            #+#    #+#             */
+/*   Updated: 2023/02/20 07:46:07 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "Zombie.class.hpp"
+#include <iostream> 
 
 int main()
 {
-	Zombie *zombie;
-	zombie = newZombie("Bebou");
-	zombie->announce();
+	//init
+	std::string str = "HI THIS IS BRAIN";
+	std::string *stringPTR = &str;
+	std::string &stringREF = str;
 
-	randomChump("Uobeb");
-	delete zombie;
+	//address
+	std::cout << "ptr :" << stringPTR << std::endl;
+	std::cout << "ref :" << &stringREF << std::endl;
+
+	//value
+	std::cout << "ptr :" << *stringPTR << std::endl;
+	std::cout << "ref :" << stringREF << std::endl;
+
 }
+
