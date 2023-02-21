@@ -6,7 +6,7 @@
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 07:50:26 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/20 11:45:37 by mmidon           ###   ########.fr       */
+/*   Updated: 2023/02/21 08:57:59 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,13 @@ void	my_test()
 	Weapon secret("determination");
 	HumanA zoui("Zoui", secret);
 	zoui.attack();
-	Weapon sword("basic sword");
-	zoui.setWeapon(sword);
 	secret.setType("dhsfgdhdaj");
+	Weapon sword("basic sword");
 	sword.setType("epic sword");
+	HumanB test("Test");
+	test.setWeapon(sword);
 	zoui.attack();
-	zoui.setWeapon(secret);
-	zoui.attack();
+	test.attack();
 }
 
 int main()
