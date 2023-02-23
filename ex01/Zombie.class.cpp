@@ -6,7 +6,7 @@
 /*   By: mmidon <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 12:38:31 by mmidon            #+#    #+#             */
-/*   Updated: 2023/02/17 14:43:31 by mmidon           ###   ########.fr       */
+/*   Updated: 2023/02/23 06:50:18 by mmidon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <iostream> 
@@ -20,7 +20,7 @@ Zombie::Zombie(void)
 
 Zombie::~Zombie(void)
 {
-	std::cout << "Zombie" << Zombie::name << "has been destructed" << std::endl;
+	std::cout << "Zombie " << Zombie::name << " has been destructed" << std::endl;
 }
 
 void Zombie::setName(std::string name)
